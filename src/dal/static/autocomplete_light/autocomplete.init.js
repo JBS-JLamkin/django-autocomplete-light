@@ -87,7 +87,7 @@ element was cloned with data - which should be the case.
         window.__dal__initialize = initialize;
 
         $(document).ready(function () {
-            $('[data-autocomplete-light-function=select2]:not([id*="__prefix__"])').each(initialize);
+            $('[data-autocomplete-light-function=select2]).each(initialize);
         });
 
         if ('MutationObserver' in window) {
